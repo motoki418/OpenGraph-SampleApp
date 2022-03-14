@@ -11,6 +11,7 @@
 		36E8FECA27DF6E37004AE9CA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36E8FEC927DF6E37004AE9CA /* ContentView.swift */; };
 		36E8FECC27DF6E39004AE9CA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 36E8FECB27DF6E39004AE9CA /* Assets.xcassets */; };
 		36E8FECF27DF6E39004AE9CA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 36E8FECE27DF6E39004AE9CA /* Preview Assets.xcassets */; };
+		36E8FED727DF6E6A004AE9CA /* OpenGraph in Frameworks */ = {isa = PBXBuildFile; productRef = 36E8FED627DF6E6A004AE9CA /* OpenGraph */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				36E8FED727DF6E6A004AE9CA /* OpenGraph in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +85,9 @@
 			dependencies = (
 			);
 			name = "OpenGraph-Sample";
+			packageProductDependencies = (
+				36E8FED627DF6E6A004AE9CA /* OpenGraph */,
+			);
 			productName = "OpenGraph-Sample";
 			productReference = 36E8FEC427DF6E37004AE9CA /* OpenGraph-Sample.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +116,9 @@
 				Base,
 			);
 			mainGroup = 36E8FEBB27DF6E37004AE9CA;
+			packageReferences = (
+				36E8FED527DF6E6A004AE9CA /* XCRemoteSwiftPackageReference "OpenGraph" */,
+			);
 			productRefGroup = 36E8FEC527DF6E37004AE9CA /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -341,6 +349,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		36E8FED527DF6E6A004AE9CA /* XCRemoteSwiftPackageReference "OpenGraph" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/satoshi-takano/OpenGraph";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		36E8FED627DF6E6A004AE9CA /* OpenGraph */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 36E8FED527DF6E6A004AE9CA /* XCRemoteSwiftPackageReference "OpenGraph" */;
+			productName = OpenGraph;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 36E8FEBC27DF6E37004AE9CA /* Project object */;
 }

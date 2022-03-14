@@ -1,0 +1,16 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "OpenGraph",
+        "repositoryURL": "https://github.com/satoshi-takano/OpenGraph",
+        "state": {
+          "branch": null,
+          "revision": "382972f1963580eeabafd88ad012e66576b4d213",
+          "version": "1.4.1"
+        }
+      }
+    ]
+  },
+  "version": 1
+}
